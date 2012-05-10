@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean class="ie.cit.cloudapp.UserRepository" scope="session">
+	<bean id="repo" class="ie.cit.cloudapp.UserRepository" >
 	</bean>
 
 </beans>

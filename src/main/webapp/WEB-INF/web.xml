@@ -22,12 +22,13 @@
 		
 	<servlet>
  	 <servlet-name>user</servlet-name>
- 	  <servlet-class>ie.cit.cloudapp.UserServlet</servlet-class>
+ 	 <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+ 	 <load-on-startup>1</load-on-startup>
  	  </servlet>
  
  	<servlet-mapping>
- 	 <servlet-name>user</servlet-name>
- 	 <url-pattern>/users</url-pattern>
+ 	 <servlet-name>dispatcher</servlet-name>
+ 	 <url-pattern>*html</url-pattern>
  	</servlet-mapping>
 
 
